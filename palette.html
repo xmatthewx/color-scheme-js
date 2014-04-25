@@ -67,6 +67,7 @@
       </div>
       <div class="row span12">
         <div id="colors"></div>
+        <p id="hexvalues" style="clear:both;"></p>
         <div class="clearfix"></div>
       </div>
     </div>
@@ -292,7 +293,8 @@
             console.log("Sorry. Something went wrong in Colorland.");
         }
       }
-
+      console.log(palette);
+      $('#hexvalues').text(palette.join());
       return palette;
     };
 
